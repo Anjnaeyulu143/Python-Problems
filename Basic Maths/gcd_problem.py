@@ -7,4 +7,8 @@ n = int(input())
 m = int(input())
 
 result = gcd(n,m)
-print(result)
+
+lcm = (n*m)//result
+
+print("LCM OF THE GIVEN NUMBERS: ",lcm)
+print("GCD OF THE GIVEN NUMBERS: ", result)
