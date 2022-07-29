@@ -10,5 +10,7 @@ result = gcd(n,m)
 
 lcm = (n*m)//result
 
+# lcm(a,b) * gcd(a,b) = a*b
+
 print("LCM OF THE GIVEN NUMBERS: ",lcm)
 print("GCD OF THE GIVEN NUMBERS: ", result)

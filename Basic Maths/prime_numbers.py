@@ -1,5 +1,7 @@
 def is_prime(n):
     
+    # creating a list with assuming all values are prime numbers assigned True value
+    
     boolean_prime_list = [True for i in range(n+1)]
     a = 2
     
