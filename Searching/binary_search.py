@@ -1,3 +1,6 @@
+# Binary Search T.C is O(log n)
+
+
 def binary_serach(arr,n):
     
     start_index = 0
@@ -20,13 +23,14 @@ def binary_serach(arr,n):
     return -1
         
 
+if __name__ == '__main__':
 
-even_nums_list = [2,4,5,6,17,20]
+    even_nums_list = [2,4,5,6,17,20]
 
-odd_nums_list = [17,18,20,22,25]
+    odd_nums_list = [17,18,20,22,25]
 
-n = int(input())
+    n = int(input())
 
-result = binary_serach(odd_nums_list,n)
+    result = binary_serach(odd_nums_list,n)
 
-print(result)
+    print(result)
