@@ -1,3 +1,6 @@
+# Quick Sort T.C O(nlog n) in average and best cases, O(n2) in worst cases
+
+
 def partition(nums_arr,l,h):
     
     pivot_element = nums_arr[l]
@@ -31,6 +34,14 @@ def quick_sort(nums_arr,low,high):
     
 if __name__ == '__main__':
     
-    nums_list = [21,10,1,0]
-    quick_sort(nums_list,0,len(nums_list)-1)
-    print(nums_list)
+    test_cases = [
+        [25,10,1,5,20,3],
+        [8,0,1,20,3,1,49],
+        [29,1,1000,2,4,100]
+        ]
+    
+    for nums_list in test_cases:
+        quick_sort(nums_list,0,len(nums_list)-1)
+        print(nums_list)
+    
+    

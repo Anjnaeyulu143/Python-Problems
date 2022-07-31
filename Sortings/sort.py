@@ -28,6 +28,7 @@ def merge_two_sorted_arr(left_arr,right_arr,num_arr):
         k += 1
 
 def merge_sort(nums_arr):
+    
     # base condition if length of nums_arr is eaqual to 1
     
     if (len(nums_arr) <= 1):
