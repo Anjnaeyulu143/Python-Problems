@@ -8,7 +8,9 @@ def trailing_zeros(n):
    
     return num_zeros
 
-n = int(input())
 
-result = trailing_zeros(n)
-print(result)
+if __name__ == '__main__':
+    n = int(input())
+
+    result = trailing_zeros(n)
+    print(result)

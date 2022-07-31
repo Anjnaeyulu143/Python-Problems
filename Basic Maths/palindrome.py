@@ -10,12 +10,14 @@ def palindrome(n):
         return True
     else:
         return False
+    
+if __name__ == '__main__':
+    
+    n = int(input())
 
-n = int(input())
+    result = palindrome(n)
 
-result = palindrome(n)
-
-if result:
-    print("Given number is a palindrome")
-else:
-    print("Given number is not a palindrome")
+    if result:
+        print("Given number is a palindrome")
+    else:
+        print("Given number is not a palindrome")

@@ -10,8 +10,8 @@ res = 1
 
 while (m>0):
     if (m%2 != 0):
-        res = (res * (n * b))%b 
+        res = (res * (n % b))%b 
     
-    n = ((n*b)*(n*b))%b
+    n = ((n%b)*(n%b))%b
     m = m//2
 print(res)

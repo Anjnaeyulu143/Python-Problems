@@ -16,6 +16,8 @@ def is_prime(n):
     for i in range (2,n+1):
         if boolean_prime_list[i] == True:
             print(i)
+
+if __name__ == '__main__':
     
-n = int(input())
-is_prime(n)
+    n = int(input())
+    is_prime(n) 

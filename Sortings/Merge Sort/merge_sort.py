@@ -61,6 +61,6 @@ def merge_sort(nums_arr):
 
 if __name__ == '__main__':
     
-    nums_list = [100,10,2,1,19,12,6]
+    nums_list = [1,2,3,4,5,6,7]
     merge_sort(nums_list)
     print(nums_list)
