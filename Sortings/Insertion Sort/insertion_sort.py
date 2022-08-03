@@ -22,7 +22,7 @@ def insertion_sort(nums_arr):
 
 if __name__ == '__main__':
 
-    nums_list = [1,2,3,4,5,6]
+    nums_list = [2,20,10,100,1,2,3,4,5,6]
 
     result = insertion_sort(nums_list)
     print(result)
