@@ -25,9 +25,10 @@ def genrate_subsets(string):
     power_sets_list = []
     
     def helper(Op,In):
-        if (In == ''):
-            power_sets_list.append(Op)
-            print(Op)
+
+        if (len(In) == 0):
+            if Op not in power_sets_list:
+                power_sets_list.append(list(map(int,Op)))
             return
         Op2 = Op
         Op2 += In[0]
@@ -38,14 +39,16 @@ def genrate_subsets(string):
         helper(Op2,In)
         
         
-    helper('',string)
+    helper(string[0],string[1:])
 
 
     return power_sets_list
     
     
 if __name__ == "__main__":
-    string = 'ab'
+    string = [i for i in input().split()]
     result = genrate_subsets(string)
     
-    print(result)
+    for nums_list in result:
+        print(sum(nums_list))
+    

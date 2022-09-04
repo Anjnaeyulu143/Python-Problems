@@ -1,6 +1,6 @@
 def nth_fibonacci(n):
-    if (n == 1  or n==2):
-        return 1
+    if (n <= 1):
+        return n
     
     partial_ans1 = nth_fibonacci(n-1)
     partial_ans2 = nth_fibonacci(n-2)
